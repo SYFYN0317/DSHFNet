@@ -53,23 +53,21 @@ def train_1times():
         TrLabel_10TIMES = loadmat(LabelPath_10TIMES_1)['Houston_train']
         TsLabel_10TIMES = loadmat(LabelPath_10TIMES_2)['Houston_test']
     elif args.dataset == 'Trento':
-        DataPath1 = 'F:/LNNU/data/HS-DSM Trento/Trento/Trento/HSI.mat'
-        DataPath2 = 'F:/LNNU/data/HS-DSM Trento/Trento/Trento/LiDAR.mat'
+        DataPath1 = './data/Trento/HSI.mat'
+        DataPath2 = './data/Trento/LiDAR.mat'
         Data1 = loadmat(DataPath1)['HSI']
         Data2 = loadmat(DataPath2)['LiDAR']
-        LabelPath_10TIMES_1 = 'F:/LNNU/data/HS-DSM Trento/Trento/Trento/TRLabel.mat'
-        # LabelPath_10TIMES_1 = 'G:/下载\HSI-datasets-master/HSI-datasets-master/Classification/Trento80.mat'
-        LabelPath_10TIMES_2 = 'F:/LNNU/data/HS-DSM Trento/Trento/Trento/TSLabel.mat'
+        LabelPath_10TIMES_1 = './data/Trento/TRLabel.mat'
+        LabelPath_10TIMES_2 = './data/Trento/TSLabel.mat'
         TrLabel_10TIMES = loadmat(LabelPath_10TIMES_1)['TRLabel']
         TsLabel_10TIMES = loadmat(LabelPath_10TIMES_2)['TSLabel']
     elif args.dataset == 'Augsburg':
-        DataPath1 = 'data_HS_LR.mat'
-        DataPath2 = 'data_DSM.mat'
+        DataPath1 = './data/Augsburg/data_HS_LR.mat'
+        DataPath2 = './data/Augsburg/data_DSM.mat'
         Data1 = loadmat(DataPath1)['data_HS_LR']
         Data2 = loadmat(DataPath2)['data_DSM']
-        LabelPath_10TIMES_1 = 'TrainImage.mat'
-        # LabelPath_10TIMES_1 = 'G:/下载/HSI-datasets-master/HSI-datasets-master/Classification/Augsburg40.mat'
-        LabelPath_10TIMES_2 = 'TestImage.mat'
+        LabelPath_10TIMES_1 = './data/Augsburg/TrainImage.mat'
+        LabelPath_10TIMES_2 = './data/Augsburg/TestImage.mat'
         TrLabel_10TIMES = loadmat(LabelPath_10TIMES_1)['TrainImage']
         TsLabel_10TIMES = loadmat(LabelPath_10TIMES_2)['TestImage']
     Data1 = Data1.astype(np.float32)
