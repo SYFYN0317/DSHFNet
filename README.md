@@ -3,7 +3,7 @@
 
 The detailed results can be seen in the [DSHFNet: Dynamic Scale Hierarchical Fusion Network Based on Multiattention for Hyperspectral Image and LiDAR Data Classification](https://ieeexplore.ieee.org/document/10238743).
 
-Feel free to contact me if you need any further information: 912444862@qq.com
+Feel free to contact me if you need any further information: 912444862@qq.com, SYFyn@outlook.com
 
 Some of our code references the projects
 * [Glt-Net](Global–Local Transformer Network for HSI and LiDAR Data Joint Classification)
